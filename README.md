@@ -1,1 +1,48 @@
-# pattern
+n=int(input("Enter the limit:"))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print("*",end='')
+    print(" ")
+
+OUTPUT:
+
+Enter the limit:5
+* 
+** 
+*** 
+**** 
+***** 
+
+n=int(input("Enter the limit:"))
+for i in range(1,n+1):
+    for k in range(n-i,0,-1):
+        print(' ',end=' ')
+    for j in range(1,i+1):
+    
+        print("*",end='')
+    print(" ")
+
+OUTPUT:
+
+Enter the limit:5
+        * 
+      ** 
+    *** 
+  **** 
+***** 
+
+s=input("Enter the string:")
+n=len(s)
+for i in range(0,n):
+    for j in range(0,i):
+        print(s[j],end=' ')
+    print(" ")
+
+OUTPUT:
+
+Enter the string:ABCD
+ 
+A  
+A B  
+A B C
+
